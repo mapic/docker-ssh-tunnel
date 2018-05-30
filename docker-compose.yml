@@ -3,9 +3,9 @@ services:
   postgis:
     build: .
     volumes:
-      - $HOME/.ssh:/root/ssh:ro
-    env_file:
-      - geocat.env
+      - ./keys:/tmp/keys
+    # env_file:
+      # - geocat.env
     ports:
-      - "55432:55432"
-      - "5432:5432"
+      - "127.0.0.1:50001:50001"
+    working_dir: /tmp/keys
