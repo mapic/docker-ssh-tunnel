@@ -14,5 +14,8 @@ RUN apk add --no-cache nmap
 # RUN mkdir /tmp/keys
 # ADD ./keys /tmp/keys
 ADD ./docker-entrypoint.sh /tmp/docker-entrypoint.sh
+ADD ./tunnel-1.sh /tmp/tunnel-1.sh
+ADD ./tunnel-2.sh /tmp/tunnel-2.sh
+ADD ./tunnel-3.sh /tmp/tunnel-3.sh
 
 CMD sh /tmp/docker-entrypoint.sh

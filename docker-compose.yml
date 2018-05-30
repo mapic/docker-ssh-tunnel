@@ -1,11 +1,11 @@
 version: '3'
 services:
-  postgis:
+  rasdaman:
     build: .
     volumes:
       - ./keys:/tmp/keys
-    # env_file:
-      # - geocat.env
     ports:
       - "127.0.0.1:50001:50001"
-    working_dir: /tmp/keys
+      - "127.0.0.1:50002:50002"
+      - "127.0.0.1:50003:50003"
+    working_dir: /tmp

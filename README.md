@@ -7,6 +7,10 @@
 git clone https://github.com/mapic/docker-ssh-tunnel.git
 cd docker-ssh-tunnel
 ./build.sh
+
+# Ensure you copy the vendor SSH keys to the `/keys/` folder before you start.
+
 ./up.sh
 ```
+
 
